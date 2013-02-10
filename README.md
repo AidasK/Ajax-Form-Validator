@@ -22,6 +22,10 @@ Plugin for forms validation throught ajax. Can be used without bootstrap.
   $('form.ajax-form').form();  
 </script>
 ```
+On submit post will be sent to server via ajax request. Server must return associative array in json format. 
+ * Key => input name
+ * Value => input errors
+On success server must return empty array. 
 
 ### Parameters
 Parameters can be set with data attribute or can be passed throught params
